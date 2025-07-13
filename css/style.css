@@ -80,6 +80,13 @@ a:active {
   border-radius: 2rem;
   box-shadow: 7px 10px 16px 4px rgba(0, 0, 0, 0.37);
 }
+@media all and (max-width: 600px) {
+  .phone {
+    width: 20rem;
+    height: 40rem;
+    padding: 0.8rem;
+  }
+}
 .phone_screen {
   width: 100%;
   height: 100%;
@@ -94,11 +101,23 @@ a:active {
   transform: translateX(-3rem);
   gap: 1.5rem;
 }
+@media all and (max-width: 600px) {
+  .phone_screen_top {
+    transform: translateX(-0.9rem);
+    gap: 1rem;
+  }
+}
 .phone_screen_top img {
   width: 2.5rem;
   height: 2.5rem;
   border-radius: 50%;
   outline: 2px solid white;
+}
+@media all and (max-width: 600px) {
+  .phone_screen_top img {
+    width: 2rem;
+    height: 2rem;
+  }
 }
 
 .viola {
@@ -107,6 +126,11 @@ a:active {
   border-radius: 2rem 2rem 0.75rem 0.75rem;
   position: relative;
   z-index: 2;
+}
+@media all and (max-width: 600px) {
+  .viola {
+    padding: 2rem 1.2rem 1.2rem 1.2rem;
+  }
 }
 .viola::before {
   content: "";
@@ -119,11 +143,23 @@ a:active {
   transform: translate(-50%, -30%);
   border-radius: 0px 0px 15px 15px;
 }
+@media all and (max-width: 600px) {
+  .viola::before {
+    height: 1.8rem;
+    width: 10rem;
+  }
+}
 
 .back,
 .dots {
   position: absolute;
   top: 45%;
+}
+@media all and (max-width: 600px) {
+  .back,
+  .dots {
+    top: 43%;
+  }
 }
 
 .dots {
@@ -143,13 +179,28 @@ a:active {
   font-size: 1.1rem;
   color: hsl(270, 20%, 96%);
 }
+@media all and (max-width: 600px) {
+  .avatar_name {
+    font-size: 0.9rem;
+  }
+}
 .avatar_description {
   font-size: 0.8rem;
   color: hsl(276, 100%, 81%);
 }
+@media all and (max-width: 600px) {
+  .avatar_description {
+    font-size: 0.7rem;
+  }
+}
 
 .phone_screen_messages > * {
   margin-bottom: 0.8rem;
+}
+@media all and (max-width: 600px) {
+  .phone_screen_messages > * {
+    margin-bottom: 0.6rem;
+  }
 }
 
 .phone_screen_messages {
@@ -165,6 +216,12 @@ a:active {
   border-radius: 10px;
   max-width: 60%;
 }
+@media all and (max-width: 600px) {
+  .rosa-sinistra {
+    font-size: 0.6rem;
+    padding: 0.6rem;
+  }
+}
 
 .grigio-destra {
   color: hsl(270, 7%, 64%);
@@ -177,9 +234,20 @@ a:active {
   margin-left: auto;
   font-size: 0.8rem;
 }
+@media all and (max-width: 600px) {
+  .grigio-destra {
+    font-size: 0.6rem;
+    padding: 0.6rem;
+  }
+}
 
 .grigio-destra.second {
   margin-bottom: 1.5rem;
+}
+@media all and (max-width: 600px) {
+  .grigio-destra.second {
+    margin-bottom: 1rem;
+  }
 }
 
 .immagini {
@@ -188,12 +256,23 @@ a:active {
   gap: 0.7rem;
   margin-top: 1.5rem;
 }
+@media all and (max-width: 600px) {
+  .immagini {
+    margin-top: 1rem;
+    gap: 0.5rem;
+  }
+}
 .immagini img {
   max-width: 3.8rem;
   width: 100%;
   height: auto;
   flex: 1 1 3.8rem;
   border-radius: 10px;
+}
+@media all and (max-width: 600px) {
+  .immagini img {
+    max-width: 2.8rem;
+  }
 }
 
 .check {
@@ -205,6 +284,11 @@ a:active {
   background-image: linear-gradient(to left bottom, hsl(293, 100%, 63%), hsl(264, 100%, 61%));
   border-radius: 10px 10px 10px 5px;
   max-width: 70%;
+}
+@media all and (max-width: 600px) {
+  .check {
+    padding: 0.6rem;
+  }
 }
 
 label::before {
@@ -236,10 +320,20 @@ label {
   font-size: 0.7em;
   color: hsl(206, 6%, 79%);
 }
+@media all and (max-width: 600px) {
+  label {
+    font-size: 0.6rem;
+  }
+}
 
 .price {
   margin-left: auto;
   color: white;
+}
+@media all and (max-width: 600px) {
+  .price {
+    font-size: 0.8rem;
+  }
 }
 
 .input-message {
@@ -252,9 +346,25 @@ label {
   border-radius: 20px;
   margin-top: 1.2rem;
 }
+@media all and (max-width: 600px) {
+  .input-message {
+    padding: 0.6rem 0.6rem 0.4rem 1rem;
+    margin-top: 1.4rem;
+  }
+}
 .input-message span {
   color: hsl(206, 6%, 79%);
   font-size: 0.8rem;
+}
+@media all and (max-width: 600px) {
+  .input-message span {
+    font-size: 0.6rem;
+  }
+}
+@media all and (max-width: 600px) {
+  .input-message span {
+    font-size: 0.6rem;
+  }
 }
 .input-message img {
   max-width: 18px;
@@ -280,7 +390,7 @@ main {
 @media all and (max-width: 600px) {
   .phone_text {
     flex-direction: column;
-    gap: 4rem;
+    gap: 3rem;
     margin-top: 2rem;
   }
 }
