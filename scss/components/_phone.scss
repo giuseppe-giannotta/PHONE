@@ -7,11 +7,11 @@
   padding: 1rem;
   border-radius: 2rem;
   box-shadow: 7px 10px 16px 4px rgba(0, 0, 0, 0.37);
-   @media all and (max-width: 600px) {
-      width: 20rem;
-      height: 40rem;
-      padding: .8rem;
-    }
+  @media all and (max-width: 600px) {
+    width: 20rem;
+    height: 40rem;
+    padding: 0.8rem;
+  }
   &_screen {
     width: 100%;
     height: 100%;
@@ -26,21 +26,19 @@
       transform: translateX(-3rem);
       gap: 1.5rem;
       @media all and (max-width: 600px) {
-    transform: translateX(-.9rem);
-    gap: 1rem;
-}
-      
+        transform: translateX(-0.9rem);
+        gap: 1rem;
+      }
 
       img {
         width: 2.5rem;
         height: 2.5rem;
         border-radius: 50%;
         outline: 2px solid white;
-          @media all and (max-width: 600px){
-    width: 2rem;
-        height: 2rem;
-    
-  }
+        @media all and (max-width: 600px) {
+          width: 2rem;
+          height: 2rem;
+        }
       }
     }
   }
@@ -56,11 +54,9 @@
   border-radius: 2rem 2rem 0.75rem 0.75rem;
   position: relative;
   z-index: 2;
-@media all and (max-width: 600px) {
-  padding: 2rem 1.2rem 1.2rem 1.2rem
-
-}
-  
+  @media all and (max-width: 600px) {
+    padding: 2rem 1.2rem 1.2rem 1.2rem;
+  }
 
   &::before {
     content: '';
@@ -74,10 +70,9 @@
     border-radius: 0px 0px 15px 15px;
 
     @media all and (max-width: 600px) {
-    height: 1.8rem;
-    width: 10rem;;
-
-}
+      height: 1.8rem;
+      width: 10rem;
+    }
   }
 }
 .back,
@@ -85,8 +80,9 @@
   position: absolute;
   top: 45%;
 
-  @media all and (max-width: 600px){top: 43%;}
-  
+  @media all and (max-width: 600px) {
+    top: 43%;
+  }
 }
 .dots {
   right: 1rem;
@@ -103,27 +99,24 @@
   &_name {
     font-size: 1.1rem;
     color: $Gray-100;
-      @media all and (max-width: 600px){
-    font-size: 0.9rem;
-    
-  }
+    @media all and (max-width: 600px) {
+      font-size: 0.9rem;
+    }
   }
 
   &_description {
     font-size: 0.8rem;
     color: $Purple-300;
-      @media all and (max-width: 600px){
-    font-size: 0.7rem;
-    
-  }
+    @media all and (max-width: 600px) {
+      font-size: 0.7rem;
+    }
   }
 }
 .phone_screen_messages > * {
   margin-bottom: 0.8rem;
-   @media all and (max-width: 600px){
+  @media all and (max-width: 600px) {
     margin-bottom: 0.6rem;
-
-   }
+  }
 }
 
 .phone_screen_messages {
@@ -137,7 +130,7 @@
   background-color: rgba(198.237, 201.8784, 204.663, 0.2);
   border-radius: 10px;
   max-width: 60%;
-  @media all and (max-width: 600px){
+  @media all and (max-width: 600px) {
     font-size: 0.6rem;
     padding: 0.6rem;
   }
@@ -154,15 +147,15 @@
   margin-left: auto;
   font-size: 0.8rem;
 
-  @media all and (max-width: 600px){
+  @media all and (max-width: 600px) {
     font-size: 0.6rem;
     padding: 0.6rem;
   }
 }
 .grigio-destra.second {
   margin-bottom: 1.5rem;
-   @media all and (max-width: 600px){
-    margin-bottom: 1rem;;
+  @media all and (max-width: 600px) {
+    margin-bottom: 1rem;
   }
 }
 
@@ -171,10 +164,9 @@
   justify-content: right;
   gap: 0.7rem;
   margin-top: 1.5rem;
-    @media all and (max-width: 600px){
+  @media all and (max-width: 600px) {
     margin-top: 1rem;
     gap: 0.5rem;
-    
   }
 
   img {
@@ -184,9 +176,9 @@
     flex: 1 1 3.8rem;
     border-radius: 10px;
 
-    @media all and (max-width: 600px){
-    max-width: 2.8rem;
-  }
+    @media all and (max-width: 600px) {
+      max-width: 2.8rem;
+    }
   }
 }
 .check {
@@ -203,9 +195,8 @@
   border-radius: 10px 10px 10px 5px;
   max-width: 70%;
 
-    @media all and (max-width: 600px){
+  @media all and (max-width: 600px) {
     padding: 0.6rem;
-    
   }
 }
 label::before {
@@ -235,20 +226,17 @@ input:checked ~ label::before {
 label {
   font-size: 0.7em;
   color: $Gray-300;
-  
-  @media all and (max-width: 600px){
+
+  @media all and (max-width: 600px) {
     font-size: 0.6rem;
-    
   }
 }
 .price {
   margin-left: auto;
   color: white;
-@media all and (max-width: 600px){
+  @media all and (max-width: 600px) {
     font-size: 0.8rem;
-    
   }
-
 }
 
 .input-message {
@@ -261,26 +249,21 @@ label {
   border-radius: 20px;
   margin-top: 1.2rem;
 
-
   @media all and (max-width: 600px) {
-   
-    padding:0.6rem 0.6rem 0.4rem 1rem;
+    padding: 0.6rem 0.6rem 0.4rem 1rem;
     margin-top: 1.4rem;
-}
+  }
 
   span {
     color: $Gray-300;
     font-size: 0.8rem;
-    @media all and (max-width: 600px){
+    @media all and (max-width: 600px) {
       font-size: 0.6rem;
     }
-    
 
-    
-  @media all and (max-width: 600px){
-    font-size: 0.6rem;
-    
-  }
+    @media all and (max-width: 600px) {
+      font-size: 0.6rem;
+    }
   }
 
   img {
@@ -290,13 +273,13 @@ label {
   }
 }
 main {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 100%;
-    gap: 5rem;
-  }
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  gap: 5rem;
+}
 
 .phone_text {
   display: flex;
@@ -310,7 +293,6 @@ main {
     margin-top: 2rem;
   }
 
-  
   .text {
     flex-basis: 38%;
     @media all and (max-width: 600px) {
@@ -324,8 +306,8 @@ main {
       font-weight: 500;
       margin-bottom: 2rem;
       @media all and (max-width: 600px) {
-      font-size: 3rem;
-    }
+        font-size: 3rem;
+      }
     }
 
     &_paragraph {
@@ -333,14 +315,10 @@ main {
       font-weight: 400;
       color: $Gray-500;
       line-height: 1.5;
-        @media all and (max-width: 600px) {
-      font-size: 1.6rem;
-      line-height: 1.4;
-    }
+      @media all and (max-width: 600px) {
+        font-size: 1.6rem;
+        line-height: 1.4;
+      }
     }
   }
 }
-
-
-
-
